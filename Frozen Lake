@@ -138,7 +138,6 @@ def VQC(var_q_circuit,var_q_bias,angles=None):
 
 # Square Loss calculation
 def square_loss(labels,predictions):
-    # 
     loss = 0
     for l, p in zip(labels, predictions):
         loss = loss + (l - p) ** 2
